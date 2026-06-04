@@ -1,26 +1,23 @@
 package com.minor.project.vibe_coder.entity;
 
+
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
-import java.time.Instant;
-
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class User {
-
+public class Plan {
 
      Long id;
      String name;
-     String email;
-     String passwordHash;
-     String avtarUrl;
-
-     Instant createdAt; // for date and time
-     Instant updatedAt;
-     Instant deletedAt;
+     String stripPriceId;
+     Integer maxProject;
+     Integer MaxTokensPerDay;
+     Integer maxPreviews;
+     Boolean unlimitedAi;
+     Boolean active;
 
 }
