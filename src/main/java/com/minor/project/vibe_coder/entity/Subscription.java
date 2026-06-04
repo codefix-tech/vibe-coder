@@ -1,5 +1,6 @@
 package com.minor.project.vibe_coder.entity;
 
+import com.minor.project.vibe_coder.enums.SubscriptionStatus;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,8 @@ public class Subscription {
     User user;
 
     Plan plan;
+
+    SubscriptionStatus status;
     String StripSubscriptionId;
     String StripCustomerId;
     Instant CurrentPeriodStart;
@@ -22,5 +25,7 @@ public class Subscription {
     Boolean cancelAtPeriodEnd;
     Instant createdAt;
     Instant updatedAt;
+
+
 
 }
